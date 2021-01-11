@@ -26,6 +26,10 @@ body {
     color: $color-text;
 }
 
+.container {
+    display: flex;
+}
+
 h1 {
     font-size: 48px;
     font-weight: 100; 
@@ -35,7 +39,7 @@ h1 {
 }
 
 h2 {
-    font-size: 22px;
+    font-size: 12px;
     font-weight: 400;
     color: $color-text;
     margin: 0 auto;
@@ -47,8 +51,18 @@ h3 {
 }
 
 section {
-    padding-top: 110px;
-    padding-bottom: 96px;
+    padding: 110px 280px 96px 280px;
+}
+
+.section-title::after {
+    position: absolute;
+    content: '';
+    bottom: -12px;
+    left: 50%;
+    width: 50px;
+    height: 5px;
+    transform: translateX(-50%);
+    background: $color-button;
 }
 
 .btn {
@@ -142,6 +156,26 @@ section {
                 border-color: #ffffff;
                 color: #ffffff;
             }
+        }
+    }
+}
+
+/*About*/
+
+.about {
+    .container {
+        .section-subtitle {
+            font-size: 12px;
+        }
+
+        i {
+            font-size: 30px;
+            background: $color-title;
+            width: 185px;
+            height: 185px;
+            line-height: 185px;
+            color: $color-light;
+            border-radius: 50%;
         }
     }
 }
