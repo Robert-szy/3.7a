@@ -16,7 +16,7 @@ $font-text: 'Raleway', sans-serif;
 }
 
 body {
-    margin: 0;    
+    margin: 0px;    
     font-size: 16px;
     font-weight: 400;
     line-height: 1.7;
@@ -28,22 +28,34 @@ body {
 
 .container {
     display: flex;
+    flex-direction: column;
 }
 
-h1 {
+.section-title {
     font-size: 48px;
-    font-weight: 100; 
+    font-weight: 200; 
     line-height: 1;
     margin: 0 auto;
-    padding: 10px 0;
+    padding: 10px 0px 44px 0px;
 }
 
-h2 {
+.section-title::after {
+    position: absolute;
+    content: '';
+    bottom: 34px;
+    left: 50%;
+    width: 50px;
+    height: 1px;
+    transform: translateX(-50%);
+    background: $color-button;
+}
+
+.section-subtitle {
     font-size: 12px;
     font-weight: 400;
     color: $color-text;
     margin: 0 auto;
-    padding-bottom: 80px;
+    padding: 44px 0px 80px 0px;
 }
 
 h3 {
@@ -51,25 +63,24 @@ h3 {
 }
 
 section {
-    padding: 110px 280px 96px 280px;
+    padding: 110px 0px 96px 0px;
 }
 
-.section-title::after {
-    position: absolute;
-    content: '';
-    bottom: -12px;
-    left: 50%;
-    width: 50px;
-    height: 5px;
-    transform: translateX(-50%);
-    background: $color-button;
+.row {
+    display: flex;
+    flex-direction: row;
+    padding-top: 60px;
+    justify-content: center;
 }
 
 .btn {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     min-width: 183px;
+    max-width: 183px;
     max-height: 46px;
-    margin: 24px auto 0 auto;
+    margin: auto;
     border-radius: 30px;
     font-family: $font-text;
     font-size: 16px;
@@ -79,6 +90,8 @@ section {
     text-decoration: none;
     cursor: pointer;
     border: 2px solid $color-button;
+    background-color: $color-button;
+    color: $color-light;
 }
 
 /*Splash*/
@@ -131,11 +144,12 @@ section {
             position: absolute;
             right: auto;
             bottom: auto;
-            left: 40%;
+            left: 50%;
             top: 50%;
-            transform: translate(-30%, -50%);
+            transform: translate(-50%, -50%);
             .page-title {
                 font-size: 46px;
+                line-height: 1;
                 font-weight: bold;
                 margin: 0;
                 color: $color-light;
@@ -150,11 +164,12 @@ section {
                 margin: 0;
                 color: $color-light;
                 padding-top: 10px;
-                padding-bottom: 30px;
+                padding-bottom: 64px;
             }
             .btn {
                 border-color: #ffffff;
                 color: #ffffff;
+                background-color: transparent;
             }
         }
     }
@@ -164,18 +179,29 @@ section {
 
 .about {
     .container {
-        .section-subtitle {
-            font-size: 12px;
-        }
-
-        i {
-            font-size: 30px;
-            background: $color-title;
-            width: 185px;
-            height: 185px;
-            line-height: 185px;
-            color: $color-light;
-            border-radius: 50%;
+        .box {
+            width: 343px;
+            padding: 0px 32px 105px 32px;
+            i {
+                font-size: 65px;
+                background: #EDEFF1;
+                width: 185px;
+                height: 185px;
+                line-height: 185px;
+                color: $color-title;
+                border-radius: 50%;
+            }
+            i:hover {
+                background-color: $color-button;
+                color: $color-light;
+            }
+            p:first-of-type {
+                color: $color-dark;
+                font-size: 22px;
+            }
+            p {
+                font-size: 12px;
+            }
         }
     }
 }
