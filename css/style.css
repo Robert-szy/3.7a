@@ -1,0 +1,154 @@
+/*Variables*/
+/*Global*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  background-color: #ffffff;
+  color: #87949E;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 100;
+  line-height: 1;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: 400;
+  color: #87949E;
+  margin: 0 auto;
+  padding-bottom: 80px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+section {
+  padding-top: 110px;
+  padding-bottom: 96px;
+}
+
+.btn {
+  display: inline-block;
+  min-width: 183px;
+  max-height: 46px;
+  margin: 24px auto 0 auto;
+  border-radius: 30px;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 46px;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid #17DAA3;
+}
+
+/*Splash*/
+.splash {
+  font-family: "Raleway", sans-serif;
+  min-height: 1067px;
+  max-width: 2000px;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.splash .splash-inner {
+  margin: auto;
+  max-width: 100%;
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.splash .splash-inner .menu {
+  position: absolute;
+  min-width: 75%;
+  padding-top: 55px;
+  left: 50%;
+  right: auto;
+  transform: translateX(-50%);
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.splash .splash-inner .menu img {
+  -ms-flex: auto;
+      flex: auto;
+  max-height: 27px;
+  padding-right: 200px;
+}
+
+.splash .splash-inner .menu ul {
+  padding: 5px;
+  padding-left: 200px;
+  margin: 0;
+  list-style-type: none;
+  -ms-flex: auto;
+      flex: auto;
+  text-align: right;
+}
+
+.splash .splash-inner .menu ul li {
+  display: inline-block;
+  margin-right: 36px;
+  position: relative;
+}
+
+.splash .splash-inner .menu ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.splash .splash-inner .splash-text {
+  max-width: inherit;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  position: absolute;
+  right: auto;
+  bottom: auto;
+  left: 40%;
+  top: 50%;
+  transform: translate(-30%, -50%);
+}
+
+.splash .splash-inner .splash-text .page-title {
+  font-size: 46px;
+  font-weight: bold;
+  margin: 0;
+  color: #ffffff;
+  padding: 10px 0;
+}
+
+.splash .splash-inner .splash-text span {
+  font-weight: 100;
+}
+
+.splash .splash-inner .splash-text .page-subtitle {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+  color: #ffffff;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.splash .splash-inner .splash-text .btn {
+  border-color: #ffffff;
+  color: #ffffff;
+}
+/*# sourceMappingURL=style.css.map */

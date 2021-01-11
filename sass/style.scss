@@ -1,0 +1,147 @@
+/*Variables*/
+
+$color-dark: #000000;
+$color-light: #ffffff;
+$color-button:#17DAA3;
+$color-text: #87949E;
+$color-title: #576671;
+
+$font-map: 'Signika', sans-serif;
+$font-text: 'Raleway', sans-serif;
+
+
+/*Global*/
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+body {
+    margin: 0;    
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.7;
+    font-family: $font-text;
+    text-align: center;
+    background-color: $color-light;
+    color: $color-text;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 100; 
+    line-height: 1;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: 400;
+    color: $color-text;
+    margin: 0 auto;
+    padding-bottom: 80px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+section {
+    padding-top: 110px;
+    padding-bottom: 96px;
+}
+
+.btn {
+    display: inline-block;
+    min-width: 183px;
+    max-height: 46px;
+    margin: 24px auto 0 auto;
+    border-radius: 30px;
+    font-family: $font-text;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 46px;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid $color-button;
+}
+
+/*Splash*/
+.splash {
+    font-family: $font-text;
+    min-height: 1067px;
+    max-width: 2000px;
+    display: flex;
+    .splash-inner {
+        margin: auto;    
+        max-width: 100%;
+        position: relative;
+        display: flex;
+        .menu {
+            position: absolute;
+            min-width: 75%;
+            padding-top: 55px;
+            left: 50%;
+            right: auto;
+            transform: translateX(-50%);
+            display: flex;
+            img {
+                flex: auto;
+                max-height: 27px;
+                padding-right: 200px;
+            }
+            ul {
+                padding: 5px;
+                padding-left: 200px;
+                margin: 0;
+                list-style-type: none;
+                flex: auto;
+                text-align: right;
+                li {
+                    display: inline-block;
+                    margin-right: 36px;
+                    position: relative;
+                    a {
+                        text-decoration: none;
+                        color: $color-light;
+                        font-size: 12px;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+        .splash-text {
+            max-width: inherit;
+            flex-direction: column;
+            position: absolute;
+            right: auto;
+            bottom: auto;
+            left: 40%;
+            top: 50%;
+            transform: translate(-30%, -50%);
+            .page-title {
+                font-size: 46px;
+                font-weight: bold;
+                margin: 0;
+                color: $color-light;
+                padding: 10px 0;
+            }
+            span {
+                font-weight: 100;
+            }
+            .page-subtitle {
+                font-size: 18px;
+                font-weight: 500;
+                margin: 0;
+                color: $color-light;
+                padding-top: 10px;
+                padding-bottom: 30px;
+            }
+            .btn {
+                border-color: #ffffff;
+                color: #ffffff;
+            }
+        }
+    }
+}
