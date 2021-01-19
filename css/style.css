@@ -208,6 +208,7 @@ section {
 .about .container .box i:hover {
   background-color: #17DAA3;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .about .container .box p:first-of-type {
@@ -217,5 +218,48 @@ section {
 
 .about .container .box p {
   font-size: 12px;
+}
+
+/*Photo&Mac*/
+.photo {
+  background-color: #f5f5fa;
+}
+
+.photo .container {
+  -ms-flex-direction: row;
+      flex-direction: row;
+}
+
+.photo .container .box {
+  -ms-flex: 1;
+      flex: 1;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0px 150px 0px 0px;
+  text-align: left;
+  -ms-flex-pack: left;
+      justify-content: left;
+}
+
+.photo .container .box .btn {
+  margin: 75px auto 0px 0px;
+}
+
+.mac .container {
+  -ms-flex-direction: row;
+      flex-direction: row;
+}
+
+.mac .container .box {
+  -ms-flex: 1;
+      flex: 1;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0px 0px 0px 150px;
+  text-align: left;
+}
+
+.mac .container .box .btn {
+  margin: 75px auto 0px 0px;
 }
 /*# sourceMappingURL=style.css.map */

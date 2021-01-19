@@ -194,6 +194,7 @@ section {
             i:hover {
                 background-color: $color-button;
                 color: $color-light;
+                cursor: pointer;
             }
             p:first-of-type {
                 color: $color-dark;
@@ -201,6 +202,39 @@ section {
             }
             p {
                 font-size: 12px;
+            }
+        }
+    }
+}
+
+/*Photo&Mac*/
+.photo {
+    background-color: #f5f5fa;
+    .container {
+        flex-direction: row;
+        .box {
+            flex: 1;
+            flex-wrap: wrap;
+            padding: 0px 150px 0px 0px;
+            text-align: left;
+            justify-content: left;
+            .btn {
+                margin: 75px auto 0px 0px;
+            }
+        }
+    }
+}
+
+.mac {
+    .container {
+        flex-direction: row;
+        .box {
+            flex: 1;
+            flex-wrap: wrap;
+            padding: 0px 0px 0px 150px;
+            text-align: left;
+            .btn {
+                margin: 75px auto 0px 0px;
             }
         }
     }
