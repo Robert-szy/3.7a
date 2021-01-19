@@ -297,4 +297,39 @@ section {
   color: #17DAA3;
   font-size: 24px;
 }
+
+/*Services*/
+.services {
+  padding-left: 270px;
+  padding-right: 270px;
+  background-color: #f5f5fa;
+}
+
+.services .container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.services .container .row {
+  -ms-flex: 100%;
+      flex: 100%;
+}
+
+.services .container .row .box {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  text-align: left;
+}
+
+.services .container .row .box i {
+  margin: 20px 50px;
+  font-size: 26px;
+  color: #17DAA3;
+}
 /*# sourceMappingURL=style.css.map */

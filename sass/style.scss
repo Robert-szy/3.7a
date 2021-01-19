@@ -267,3 +267,27 @@ section {
         }
     }
 }
+/*Services*/
+.services {
+    padding-left: 270px;
+    padding-right: 270px;
+    background-color: #f5f5fa;
+    .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .row {
+            flex: 100%;
+            .box {
+                display: flex;
+                flex-direction: row;
+                text-align: left;
+                i {
+                    margin: 20px 50px;
+                    font-size: 26px;
+                    color: $color-button;
+                }
+            }
+        }
+    }
+}
